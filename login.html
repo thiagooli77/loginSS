@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login — Surto System</title>
+    <link rel="stylesheet" href="css/login.css">
+
+<body>
+    <img src="img/Logo Surto System Vertical (1).png" alt="Logo" class="logo-img">
+    <div class="container" role="main">
+        <div class="corLetr">
+            <div class="marketing" aria-hidden="false">
+                <div class="logo">
+                    <div class="mark"></div>Surto System
+                </div>
+                <h1>Bem Vindo ao Surto System!</h1>
+            </div>
+
+            <div class="panel" aria-labelledby="authHeading">
+
+
+                <div id="messageArea" aria-live="polite"></div>
+
+                <form id="loginForm">
+                    <label for="loginEmail">E-mail</label>
+                    <input id="loginEmail" name="email" type="email" placeholder="seu@gmail.com" required>
+
+                    <label for="loginPassword">Senha</label>
+                    <input id="loginPassword" name="password" type="password" placeholder="Sua Senha" required>
+
+                    <div class="actions">
+                        <div style="display:flex;gap:8px;align-items:center">
+                            <input id="remember" type="checkbox"><label for="remember" class="small"> Lembrar</label>
+                        </div>
+                        <div class="small"><a href="#" id="forgotLink">Esqueceu a Senha ?</a></div>
+                    </div>
+
+                    <div style="display:flex;gap:12px;margin-top:6px">
+                        <button id="corLog" type="submit" class="btn">login</button>
+                        <button type="button" class="ghost" id="toRegister">Crie sua Conta</button>
+                    </div>
+                </form>
+
+                <form id="registerForm" style="display:none">
+                    <label for="regName">Nome Completo</label>
+                    <input id="regName" name="name" type="text" placeholder="Nome Completo" required>
+
+                    <label for="regEmail">Email</label>
+                    <input id="regEmail" name="email" type="email" placeholder="seu@gmail.com" required>
+
+                    <div class="row">
+                        <div style="flex:1">
+                            <label for="regPassword">Senha</label>
+                            <input id="regPassword" name="password" type="password" placeholder="Min 6 Caracteres"
+                                required>
+                        </div>
+                        <div style="flex:1">
+                            <label for="regPassword2">Confirmar Senha</label>
+                            <input id="regPassword2" name="password2" type="password" placeholder="Digite Novamente"
+                                required>
+                        </div>
+                    </div>
+
+                    <div style="display:flex;gap:12px;margin-top:6px">
+                        <button id="corLog" type="submit" class="btn">Criar Conta</button>
+                        <button type="button" class="ghost" id="toLogin">Voltar ao Login</button>
+                    </div>
+                </form>
+
+                <footer>Ao continuar, você aceita os termos de serviço.</footer>
+            </div>
+            
+        </div>
+
+    </div>
+    <img src="img/SENAI_logo_2024.png" alt="Logo SENAI" class="senai-logo">
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
