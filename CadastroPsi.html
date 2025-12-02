@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Psicólogos</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/CadastrarPS.css">
+</head>
+
+<body>
+    <header>
+        <nav class="fundoTop border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="Gestão.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/image (13).png" class="logBord h-8" alt="Logo" />
+                    <span id="corLog"
+                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cadastro de
+                        Psicólogos</span></a>
+
+    </header>
+    
+    
+
+
+    <button id="openModal">+ Novo Psicológo</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 class="Cps1">Cadastro de Psicológo</h2>
+            <h5 class="Cps2">Preencha os campos abaixo para cadastrar um novo psicólogo:</h5>
+
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Digite o nome completo">
+
+            <label for="crp">Número do CRP:</label>
+            <input type="int" id="crp" placeholder="Ex: 06/123456">
+
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" placeholder="Digite a especialidade">
+
+            <label for="e-mail">E-mail Profissional:</label>
+            <input type="email" id="e-mail" placeholder="psicologo@sanai.com">
+
+            <label for="telefone">Telefone de Contato:</label>
+            <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+
+            <label for="senha">Senha Temporária:</label>
+            <input type="password" id="senha" placeholder="Crie uma senha temporária">
+
+            <label for="senha">Confirme a Senha:</label>
+            <input type="password" id="confirmarSenha" placeholder="Confirme a senha temporária">
+
+
+
+            <div class="buttons">
+                <button id="cancelarBtn">Cancelar</button>
+                <button id="registrarBtn">Cadastrar Psicólogo</button>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </nav>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="js/CadastroPs.js"></script>
+
+</html>
