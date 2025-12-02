@@ -1,8 +1,8 @@
     :root {
         --cor-Top: #ffffff;
-        --cor-fundo: #1D3557;
+        --cor-fundo: #457b9d;
         --cor-destaque: #ff6600;
-        --cor-texto: #353535;
+        --cor-texto: #2b2b2b;
         --cor-secundaria: #dadada;
         --verdeprimario: #90ff8c;
         --espacamento: 1rem;
@@ -16,7 +16,7 @@
     .fundoTop {
         background-color: var(--cor-fundo);
         border-bottom: 1px solid var(--cor-texto);
-        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 6px -1px rgba(63, 63, 63, 0.123);
     }
 
     body {
@@ -34,7 +34,7 @@
 
     #corLog {
         /* color: linear-gradient(180deg, #00FF00, #ff6600); */
-        background-image: linear-gradient(to right, #616161, #585858, #616161);
+        background-image: linear-gradient(to right,#1D3557);
         /* Exemplo de gradiente */
 
         /* Recorta o background para o formato do texto (webkit- prefix é necessário para compatibilidade) */
@@ -48,6 +48,9 @@
 
         /* Opcional: Garante que o span se comporte bem com o gradiente */
         display: inline-block;
+
+        font-family: Arial, Helvetica, sans-serif;
+
     }
 
     .Cps1 {
@@ -166,6 +169,7 @@
         border-radius: 8px;
         cursor: pointer;
         font-size: 14px;
+        
     }
 
     #openModal {
@@ -181,6 +185,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         transform: translateY(1400%);
         margin-left: 40%;
+        
     }
 
 
