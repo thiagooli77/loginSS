@@ -1,6 +1,7 @@
     :root {
-        --cor-Top: #A8DADC;
+        --cor-Top: #457B9D;
         --cor-fundo: #eff9fc;
+        --cor-bloco: #A8DADC;
         --cor-destaque: #ff6600;
         --cor-texto: #353535;
         --cor-secundaria: #dadada;
@@ -18,9 +19,11 @@
         box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
 
     }
+
     .mainCorpo1 {
         margin-bottom: 40px;
-        margin-top: 40px; /* Espaço para o rodapé fixo */
+        margin-top: 40px;
+        /* Espaço para o rodapé fixo */
     }
 
     .title1 {
@@ -45,6 +48,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .logBord {
@@ -53,7 +57,7 @@
 
     #corLog {
         /* color: linear-gradient(180deg, #00FF00, #ff6600); */
-        background-image: linear-gradient(to right,#1D3557);
+        background-image: linear-gradient(to right, #1D3557);
         /* Exemplo de gradiente */
 
         /* Recorta o background para o formato do texto (webkit- prefix é necessário para compatibilidade) */
@@ -72,12 +76,69 @@
 
     }
 
+    .card_Group_1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        max-width: 90%;
+    }
+
+    .conteudo1 {
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .conteudo1:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .total_pacientes,
+    .consultas_hoje,
+    .Proxima_consulta {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-bottom: 0.5rem;
+    }
+
+    .numero_pacientes,
+    .numero_consultas,
+    .hora_consulta {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 0.5rem;
+    }
+
+    .pacientes_cadastrados,
+    .Agendamentos_hoje,
+    .Agenda_hoje {
+        font-size: 0.875rem;
+        color: #9ca3af;
+    }
+
+    .title2 {
+        padding-top: 30px;
+        font-size: 2rem;
+        text-align: center;
+        /* transform: translateX(20%); */
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        color: var(--corh1);
+        font-weight: bold;
+    }
+
     /* Card Grupo */
 
     .card_Group {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 40px;
         margin: 0 auto;
         padding-top: 5%;
         width: calc(100% - 650px);
@@ -98,7 +159,7 @@
         float: right;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: var(--botverde);
+        background-color: var(--cor-bloco);
         border-radius: 5px;
         height: 30px;
         width: 70px;
@@ -107,7 +168,7 @@
     }
 
     .SairBot:hover {
-        background-color: var(--verdeprimario);
+        background-color: var(--cor-fundo);
         cursor: pointer;
         transition: 0.3s;
     }
@@ -125,12 +186,12 @@
 
     .margem1 {
         box-shadow: 1px 1px 1px 1px #808080;
-        background-color: var(--cor-Top);
+        background-color: var(--cor-bloco);
         margin: 10px 10px 10px 10px;
         height: 150px;
         width: 385px;
         border-radius: 10px;
-        border-top: 10px solid #90ff8c;
+        border-top: 10px solid var(--cor-Top);
         cursor: pointer;
         transition: transform 0.3s;
     }
@@ -162,7 +223,7 @@
 
     .CorbotCard {
         /* display: flex; */
-        background-color: #90ff8c;
+        background-color: var(--cor-Top);
         float: right;
         border-radius: 5px;
         height: 40px;
@@ -179,6 +240,34 @@
         justify-content: center;
         margin-top: 2px;
     }
+    #menuNav {
+        display: flex;
+        flex-direction: wrap;
+        gap: 10px;
+        padding: 20px;
+        background-color: var(--cor-bloco);
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--cor-texto);
+        font-size: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    side
+
+    .menu {
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .title3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
 
 
     /* Roda pé */
@@ -194,6 +283,10 @@
         z-index: 10;
     }
 
+    body {
+        padding-bottom: 60px;
+    }
+
     .rodape {
         padding: 10px 0 10px 0;
         font-family: Arial, Helvetica, sans-serif;
@@ -207,7 +300,7 @@
         color: inherit;
     }
 
-    
+
     @media (max-width: 1200px) {
         .card_Group {
             gap: 16px;
@@ -217,28 +310,29 @@
     }
 
     @media (max-width: 768px) {
-          .card_Group {
-                grid-template-columns: 1fr; /* Alterado para uma coluna */
-                gap: 10px;
-                width: 100%;
-                padding: 12px;
-                transform: translateY(0);
-          }
+        .card_Group {
+            grid-template-columns: 1fr;
+            /* Alterado para uma coluna */
+            gap: 10px;
+            width: 100%;
+            padding: 12px;
+            transform: translateY(0);
+        }
 
-          .card_Group .margem1 {
-                aspect-ratio: 385 / 150;
-                margin-bottom: 20px;
-          }
+        .card_Group .margem1 {
+            aspect-ratio: 385 / 150;
+            margin-bottom: 20px;
+        }
 
 
-          #rodape {
-                font-size: 0.8rem;
-                text-align: center;
-          }
+        #rodape {
+            font-size: 0.8rem;
+            text-align: center;
+        }
 
-          .mainCorpo1 {
-                margin-bottom: 60px; /* Espaço para o rodapé fixo */
-          } 
+        .mainCorpo1 {
+            margin-bottom: 60px;
+            /* Espaço para o rodapé fixo */
+        }
 
-     }
-
+    }
