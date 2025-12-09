@@ -270,11 +270,11 @@
         width: 70%;
         height: 250px;
         border-radius: 15px;
-        border: #1D3557 3px solid;
+        border: #1D3557 2px solid;
     }
 
     .title-blocos {
-        background: #1D3557;
+        background: var(--cor-Top);
         padding: 10px;
         border-radius: 12px 12px 0 0;
         text-align: center;
