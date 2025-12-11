@@ -34,7 +34,7 @@
 
     #corLog {
         /* color: linear-gradient(180deg, #00FF00, #ff6600); */
-        background-image: linear-gradient(to right,#1D3557);
+        background-image: linear-gradient(to right, #1D3557);
         /* Exemplo de gradiente */
 
         /* Recorta o background para o formato do texto (webkit- prefix é necessário para compatibilidade) */
@@ -70,17 +70,6 @@
     }
 
 
-    .NomBot {
-
-        font-size: 1rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--cor-fundo);
-
-    }
-
-    .botSair {
-        float: left;
-    }
 
 
     .formCamp {
@@ -108,6 +97,48 @@
     }
 
 
+    .SairBot {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        transition: all 0.3s ease;
+    }
+
+    .SairBot:hover {
+        background-color: #f3f4f6;
+    }
+
+    .SairBot a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .NomBot {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #374151;
+    }
+
+    .SairBot:hover .NomBot {
+        color: #1f2937;
+    }
+
+    .botSair {
+        color: #9ebeff;
+        transition: color 0.3s ease;
+    }
+
+    .SairBot:hover .botSair {
+        color: #374151;
+    }
 
 
 
@@ -169,7 +200,7 @@
         border-radius: 8px;
         cursor: pointer;
         font-size: 14px;
-        
+
     }
 
     #openModal {
@@ -185,7 +216,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         transform: translateY(1400%);
         margin-left: 40%;
-        
+
     }
 
 
