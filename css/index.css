@@ -212,31 +212,35 @@
     }
 
     .titleName {
-        color: #9c9c9c;
+        width: 100%;
+        color: #00254e;
         /* font-family: Arial, Helvetica, sans-serif; */
         /* font-size: 1rem; */
         margin-bottom: 5px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .CorbotCard {
-        /* display: flex; */
+        display: flex;
         background-color: var(--cor-Top);
         float: right;
         border-radius: 5px;
-        height: 40px;
-        width: 40px;
+        margin-right: 43%;
+        height: 50px;
+        width: 50px;
         align-items: center;
     }
 
     .svgTam {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         display: flex;
         align-items: center;
-        /* float: right; */
+        float: right;
         justify-content: center;
         margin-top: 2px;
     }
