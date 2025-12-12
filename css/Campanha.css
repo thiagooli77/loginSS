@@ -1,0 +1,368 @@
+    :root {
+        --cor-Top: #ffffff;
+        --cor-fundo: #457b9d;
+        --cor-destaque: #ff6600;
+        --cor-texto: #2b2b2b;
+        --cor-secundaria: #dadada;
+        --verdeprimario: #90ff8c;
+        --espacamento: 1rem;
+        --pagamento: #00FF00;
+        --corh1: #9e9e9e;
+        --botverde: #32b132cb;
+        --cancelar: #ff4d4d;
+    }
+
+    /* cores topo e fundo */
+    .fundoTop {
+        background-color: var(--cor-fundo);
+        border-bottom: 1px solid var(--cor-texto);
+        box-shadow: 0px 4px 6px -1px rgba(63, 63, 63, 0.123);
+    }
+
+    body {
+        background: #F1FAEE;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        opacity: 0.95;
+    }
+
+    .logBord {
+        border-radius: 10px;
+    }
+
+    #corLog {
+        /* color: linear-gradient(180deg, #00FF00, #ff6600); */
+        background-image: linear-gradient(to right, #1D3557);
+        /* Exemplo de gradiente */
+
+        /* Recorta o background para o formato do texto (webkit- prefix é necessário para compatibilidade) */
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        /* Define a cor do texto como transparente para que o background seja visível */
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        /* Fallback para navegadores que não suportam -webkit-text-fill-color */
+
+        /* Opcional: Garante que o span se comporte bem com o gradiente */
+        display: inline-block;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    
+/* CARDSSSSS */
+    .card_Group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 40px auto;
+        width: 90%;
+    }
+
+    .margem1 {
+        flex: 1 1 calc(33.333% - 20px);
+        min-width: 280px;
+        max-width: 350px;
+        padding: 15px;
+        background-color: var(--cor-fundo);
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        font-family: Arial, Helvetica, sans-serif;
+        color: #272727;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .margem1:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .imgCampanha {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo2 {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #404040;
+        width: 100%;
+        height: auto;
+    }
+
+    .maisInfo {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: var(--cor-destaque);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .maisInfo:hover {
+        background-color: #e65500;
+    }
+
+    .nome_campanha {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .descricao_campanha {
+        font-size: 1rem;
+        line-height: 1.4;
+        height: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+    }
+/* fim CARDSSSSS */
+
+    .Cps1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--cor-texto);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .Cps2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--corh1);
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+
+
+    .formCamp {
+        background-color: var(--cor-secundaria);
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        width: 50%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #808080;
+        margin-top: 2rem;
+        padding: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .TurnoCamp {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        text-align: center;
+        color: var(--corh1);
+    }
+
+
+    .SairBot {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        transition: all 0.3s ease;
+    }
+
+    .SairBot:hover {
+        background-color: #f3f4f6;
+    }
+
+    .SairBot a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .NomBot {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #374151;
+    }
+
+    .SairBot:hover .NomBot {
+        color: #1f2937;
+    }
+
+    .botSair {
+        color: #9ebeff;
+        transition: color 0.3s ease;
+    }
+
+    .SairBot:hover .botSair {
+        color: #374151;
+    }
+
+
+    #proxevent {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--corh1);
+        font-weight: bold;
+        height: auto;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    #proxeventitle {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-bottom: 15px;
+    }
+
+    .title-blocos {
+        background: var(--cor-fundo);
+        padding: 10px;
+        border-radius: 12px 12px 0 0;
+        text-align: center;
+    }
+
+    .blocos {
+        width: 100%;
+        height: 250px;
+        border-radius: 15px;
+        border: #2759a0a8 2px solid;
+    }
+
+
+    /* ----------------------------- */
+
+    /* Fundo escurecido do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1001;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Caixa do modal */
+    .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 600px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-content h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Inputs e textarea */
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        resize: none;
+    }
+
+    /* Botões */
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 8px 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+
+    }
+
+    #openModal {
+        background: #68f5fa;
+        color: #fff;
+        margin: 30px 0px 0px 0px;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--cor-fundo);
+        width: 20%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transform: translateY(1400%);
+        margin-left: 40%;
+
+    }
+
+
+    #openModal:hover {
+        background-color: #a8fbff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    #registrarBtn {
+        background-color: var(--verdeprimario);
+        color: white;
+    }
+
+    #cancelarBtn {
+        background-color: var(--cancelar);
+        color: white;
+    }
+
+    /* Animação suave */
+    .modal-content {
+        animation: aparecer 0.3s ease;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }

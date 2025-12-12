@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanhas</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Campanha.css">
+</head>
+
+
+<header>
+    <nav class="fundoTop border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img/Logo Surto - Copia.png" class="logBord h-8" alt="Logo" />
+                <span id="corLog" class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Campanhas</span>
+            </a>
+
+        </div>
+    </nav>
+
+</header>
+
+
+<button class="SairBot">
+    <a href="index.html">
+        <img src="img/campnha/arrow-left.svg" alt="Voltar" class="botSair w-6 h-6">
+        <span class="NomBot">Voltar</span>
+    </a>
+</button>
+
+
+
+<body>
+
+
+
+    <button id="openModal">+ Nova Campanha</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 class="Cps1">Cadastro de Campanha</h2>
+            <h5 class="Cps2">Preencha os campos abaixo para cadastrar uma nova campanha:</h5>
+            <label for="nomeCampanha">Nome da Campanha:</label>
+            <input type="text" id="nomeCampanha" placeholder="Digite o nome da campanha">
+            <label for="descricaoCampanha">Descrição da Campanha:</label>
+            <textarea id="descricaoCampanha" placeholder="Digite a descrição da campanha"></textarea>
+            <label for="Qrcode">Imagem do Qrcode:</label>
+            <input type="file" id="Qrcode" accept="image/*">
+            <label for="imagemCampanha">Imagem da Campanha:</label>
+            <input type="file" id="imagemCampanha" accept="image/*">
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio">
+            <label for="dataTermino">Data de Término:</label>
+            <input type="date" id="dataTermino">
+
+
+            <div class="buttons">
+                <button id="cancelarBtn">Cancelar</button>
+                <button id="registrarBtn">Cadastrar Campanha</button>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </nav>
+
+        <div class="card_Group">
+            <div class="margem1 border-gray-200">
+                <img src="img/setembroAmarelo_folder.png" alt="Campanha de Saúde Mental" class="imgCampanha">
+                <div class="conteudo2">
+                    <div class="nome_campanha">Campanha de Saúde Mental 2024</div>
+                    <div class="descricao_campanha">Uma campanha para promover a conscientização sobre saúde mental
+                        e oferecer recursos para apoio psicológico.</div>
+                    <div class="data_campanha">Data de Início: 01/07/2024</div>
+                    <div class="data_campanha">Data de Término: 31/07/2024</div>
+                    <a href="#" class="maisInfo">Saiba mais</a>
+                </div>
+            </div>
+            <div class="margem1 border-gray-200">
+                <img src="img/setembroAmarelo_folder.png" alt="Campanha de Prevenção ao Suicídio" class="imgCampanha">
+                <div class="conteudo2">
+                    <div class="nome_campanha">Campanha de Prevenção ao Suicídio</div>
+                    <div class="descricao_campanha">Uma campanha dedicada a aumentar a conscientização sobre a
+                        prevenção do suicídio e fornecer suporte às pessoas em risco.</div>
+                    <div class="data_campanha">Data de Início: 10/09/2024</div>
+                    <div class="data_campanha">Data de Término: 20/09/2024</div>
+                    <a href="#" class="maisInfo">Saiba mais</a>
+                </div>
+            </div>
+            <div class="margem1 border-gray-200">
+                <img src="img/setembroAmarelo_folder.png" alt="Campanha de Redução do Estigma" class="imgCampanha">
+                <div class="conteudo2">
+                    <div class="nome_campanha">Campanha de Redução do Estigma</div>
+                    <div class="descricao_campanha">Uma campanha para combater o estigma associado aos transtornos
+                        mentais e promover a aceitação e compreensão na sociedade.</div>
+                    <div class="data_campanha">Data de Início: 05/10/2024</div>
+                    <div class="data_campanha">Data de Término: 15/10/2024</div>
+                    <a href="#" class="maisInfo">Saiba mais</a>
+                </div>
+            </div>
+            <div class="margem1 border-gray-200">
+                <img src="img/setembroAmarelo_folder.png" alt="Campanha de Apoio à Ansiedade" class="imgCampanha">
+                <div class="conteudo2">
+                    <div class="nome_campanha">Campanha de Apoio à Ansiedade</div>
+                    <div class="descricao_campanha">Uma campanha focada em fornecer informações e recursos para
+                        ajudar as pessoas a lidar com a ansiedade e promover o bem-estar mental.</div>
+                    <div class="data_campanha">Data de Início: 15/11/2024</div>
+                    <div class="data_campanha">Data de Término: 25/11/2024</div>
+                    <a href="#" class="maisInfo">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="js/Campanha.js"></script>
+
+</html>
