@@ -1,6 +1,8 @@
     :root {
         --cor-Top: #ffffff;
         --cor-fundo: #457b9d;
+        --cor-bloco: #A8DADC;
+        --botoncolor: #4dcdd1;
         --cor-destaque: #ff6600;
         --cor-texto: #2b2b2b;
         --cor-secundaria: #dadada;
@@ -102,7 +104,7 @@
         margin-top: 15px;
         display: inline-block;
         padding: 10px 15px;
-        background-color: var(--cor-destaque);
+        background-color: var(--botoncolor);
         color: white;
         border-radius: 8px;
         text-decoration: none;
@@ -111,7 +113,7 @@
     }
 
     .maisInfo:hover {
-        background-color: #e65500;
+        background-color: var(--cor-bloco);
     }
 
     .nome_campanha {
@@ -313,28 +315,28 @@
         border-radius: 8px;
         cursor: pointer;
         font-size: 14px;
-
     }
 
-    #openModal {
-        background: #68f5fa;
-        color: #fff;
-        margin: 30px 0px 0px 0px;
-        border-radius: 8px;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--cor-fundo);
-        width: 20%;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        transform: translateY(1400%);
-        margin-left: 40%;
 
-    }
+        #openModal {
+            background-color: var(--botoncolor);
+            display: flex;
+            justify-content: center;    
+            color: white;           
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: 10%;
+        }
 
 
     #openModal:hover {
-        background-color: #a8fbff;
+        background-color: var(--cor-bloco);
         cursor: pointer;
         transition: 0.3s;
     }
